@@ -19,13 +19,13 @@ b1 = 0
 c1 = 0
 d1 = 0
 e1 = 0
-while a > b:
+while a >= b:
     a -= b
     b1 +=1
-while a > c:
+while a >= c:
     a -= c
     c1 += 1
-while a > d:
+while a >= d:
     a -= d
     d1 += 1
 while a >= e:
