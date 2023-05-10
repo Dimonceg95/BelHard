@@ -12,9 +12,6 @@ while x < f:
         c = [a, a+2, a+4, a+6, a+8]
         print(c)
         a = a + 10
-        ...
-    ...
-...
 if g < 2:
     a = a
 elif g < 4:
