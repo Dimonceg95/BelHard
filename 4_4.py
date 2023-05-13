@@ -3,9 +3,10 @@
 # незаконно
 
 a = ['sad', 12, 22, 3, 4, 'hello', [1, 2, 3]]
-for i in a[::-1]:
-    if type(i) != str:
-        a.remove(i)
+def sorted_on_str(a):
+    for i in a[::-1]:
+        if type(i) != str:
+            a.remove(i)
+    return a
 
-print(a)
-
+print(sorted_on_str(['2', 12, 'dsad', [1, 2, 3, 4], 22, 'asd']))

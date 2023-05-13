@@ -2,9 +2,8 @@
 # функцию для кодирования текстового сообщения в соответствии с кодом Морзе.
 
 
-a = input('введите ваше предложение: ').lower()
-
 def in_morze(words):
+    words.lower()
     x = {
         'a': '.-', 'b': '-...', 'c': '-.-.', 'd': '-..',
         'e': '.', 'f': '..-.', 'g': '--.', 'h': '....',
@@ -21,5 +20,6 @@ def in_morze(words):
         i = x[i]
         b.append(i)
     else:
-        print(b)
-in_morze(a)
+        return b
+
+print(in_morze('qwer12asdasd34'))

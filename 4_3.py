@@ -5,10 +5,6 @@ a = [1, 2, 3, 23, 25, 54, 2, 12, 33]
 def displacement(numbers):
     i = int(input('ВВедите число N: '))
     b = numbers[i:] + numbers[:i]
-    print(b)
+    return b
 
-displacement(a)
-
-print(b)
-
-
+print(displacement([1, 2, 3, 4, 5, 6, 7, 8, 9]))
