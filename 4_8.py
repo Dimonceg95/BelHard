@@ -1,11 +1,17 @@
 # Дан словарь, ключ - Название страны, значение - список городов, на вход
 # поступает город, необходимо сказать из какой он страны
 
-dict_city_country = {
-    'belarus': ['1', '2', '3', '4'],
-    'russia': ['5', '6', '7', '8']
-}
-x = '2'
-print(*dict_city_country.values())
-a = dict_city_country.values()
-print(a)
+
+def country_by_sity(x):
+    x = x.lower()
+    dict_city_country = {
+        'belarus': ['gomel', 'minsk'],
+        'russia': ['kazan', 'moskau'],
+        'ukraine': ['kiev', 'lviv']
+    }
+    for country_city in dict_city_country.items():
+        for city in country_city[1]:
+            if city == x:
+                return (country_city[0])
+
+print(country_by_sity('Lviv'))
