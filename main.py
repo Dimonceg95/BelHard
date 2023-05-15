@@ -20,3 +20,10 @@
 #     return [ord(key[i]) ^ ord(sms[i]) for i in range(len(key))]
 # result = vernama_encode(sms, key)
 # print(result)
+a = {
+            'belarus': ['gomel', 'minsk'],
+            'russia': ['kazan', 'moskau'],
+            'ukraine': ['kiev', 'lviv']
+}
+x = 'belarus'
+
