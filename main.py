@@ -19,11 +19,21 @@
 # def vernama_encode(key, sms):
 #     return [ord(key[i]) ^ ord(sms[i]) for i in range(len(key))]
 # result = vernama_encode(sms, key)
-# print(result)
-a = {
-            'belarus': ['gomel', 'minsk'],
-            'russia': ['kazan', 'moskau'],
-            'ukraine': ['kiev', 'lviv']
-}
-x = 'belarus'
+# # print(result)
+# a = {
+#             'belarus': ['gomel', 'minsk'],
+#             'russia': ['kazan', 'moskau'],
+#             'ukraine': ['kiev', 'lviv']
+# }
+# x = 'belarus'
+
+# 2. Написать функцию-генератор, принимающая целое число count, и возвращающая указанное колличество
+# простых чисел:
+# count=5
+# result=2, 3, 5, 7, 11
+
+
+
+
+
 

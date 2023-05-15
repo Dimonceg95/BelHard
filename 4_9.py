@@ -5,19 +5,10 @@
 
 def id_no_mails(dict_city_country):
     id_list = []
-    for id_info in dict_city_country.items():
-        print(id_info)
-        info = id_info[1]
-        print(info)
-        a = 'mail'
-        if a not in info:
-            info['mail'] = ''
-            print(info)
-        if info['mail'] == '':
-           id_str = ''
-           id_str += id_info[0]
-           id_list.append(id_str)
-
+    for k, v in dict_city_country.items():
+        info = v
+        if 'mail' not in info or info['mail'] == '':
+           id_list.append(k)
     return id_list
 
 
