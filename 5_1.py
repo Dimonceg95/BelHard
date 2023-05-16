@@ -7,14 +7,7 @@
 # вход)
 # 1.1 Написать магический метод __str__ выводящий форматированную строку с информацией
 # об автомобиле
-class Button:
 
-    def __init__(self, text: str, link:str) -> None:
-        self.text = text
-        self.link = link
-
-    def dict(self) -> dict:
-        return {'text': self.text, 'link': self.link}
 class Car:
 
     def __init__(self, color: str, count_passenger_seats: int, is_baby_seat: bool):
