@@ -20,9 +20,13 @@ class Car:
     def __str__(self) -> str:
         return f'color: {self.color}, count passenger seats: {self.count_passenger_sears}, is_baby_seat:' \
                f' {self.is_baby_seat}, is_busy: {self.is_busy}'
+
+
 mersedes = Car('red', 5, True)
 audi_a2 = Car('blue', 4, False)
 bmw = Car('blue', 5, False)
+
+
 class Taxi:
     def __init__(self, cars: [Car]):
         self.cars = cars
@@ -33,11 +37,3 @@ class Taxi:
         for car in Car:
             if count_passenger_seats == count_passenger_seats(car):
                 print('ok')
-
-
-# def find_car(self, ):
-
-
-
-
-
