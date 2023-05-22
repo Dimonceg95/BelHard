@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>my_1.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #808080;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #cc7832;}
+.s3 { color: #6897bb;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+my_1.py</font>
+</center></td></tr></table>
+<pre><span class="s0"># функция принимает список чисел возвращает среднее арифметическое четных</span>
+
+
+<span class="s2">def </span><span class="s1">odd_average(a):</span>
+    <span class="s1">odd_dict = []</span>
+    <span class="s2">for </span><span class="s1">i </span><span class="s2">in </span><span class="s1">a:</span>
+        <span class="s2">if </span><span class="s1">i % </span><span class="s3">2 </span><span class="s1">== </span><span class="s3">0</span><span class="s1">:</span>
+            <span class="s1">odd_dict.append(i)</span>
+    <span class="s1">average = sum(odd_dict) / len(odd_dict)</span>
+    <span class="s2">return </span><span class="s1">average</span>
+
+<span class="s1">print(odd_average([</span><span class="s3">1</span><span class="s2">, </span><span class="s3">2</span><span class="s2">, </span><span class="s3">3</span><span class="s2">, </span><span class="s3">4</span><span class="s2">, </span><span class="s3">6</span><span class="s2">, </span><span class="s3">10</span><span class="s2">, </span><span class="s3">14</span><span class="s1">]))</span>
+</pre>
+</body>
+</html>
